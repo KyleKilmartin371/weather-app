@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Weather Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./assets/css/style.css">
 </head>
+
 <body>
+    <header class="header"> Weather Display</header>
+
+    <div>
+        <h1>Search for a city</h1>
+        <form>
+            <label for="location">Enter "City, State Code"</label>
+            <input type="text" id="searchTerm" />
+        </form>
+    </div>
     
+    <div class="weather-col">
+        <div class="">
+            <div class="weather-result" id="weather-display">
+                <!-- Weather results will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+        <!-- Add jQuery CDN for JavaScript functionalities -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Add moment.js for time and date reference -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!--javascript-->
+        <script src="./assets/js/weather.js"></script>
 </body>
+
 </html>
